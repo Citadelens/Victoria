@@ -1,0 +1,26 @@
+	GOLD_TO_CASH_RATE = 1.0, -- Amount of money generated per gold unit
+	GOLD_TO_WORKER_PAY_RATE = 3.0, -- Multiplier for how much money gold pays to pops
+to
+	GOLD_TO_CASH_RATE = 18, -- Amount of money generated per gold unit
+	GOLD_TO_WORKER_PAY_RATE = 0.75, -- Multiplier for how much money gold pays to pops
+
+Fixed treasury cash stagnation
+decisions\00_organization_decisions.txt
+events\CleanUp.txt
+common\static_modifiers.txt
+
+Restored vanilla inventions that increase rgo output effectiveness.
+inventions/commerce_inventions.txt
+inventions/industry_inventions.txt
+But made sure they didn't increase gold mine effectiveness
+Okay actually, they should increase gold mine effectiveness a bit
+
+Decreased gradual rise in demand
+	INVENTION_IMPACT_ON_DEMAND = 0.02,
+to
+	INVENTION_IMPACT_ON_DEMAND = 0.005,
+
+Increased worker paycheck factor
+	FACTORY_PAYCHECKS_LEFTOVER_FACTOR = 0.3
+to
+	FACTORY_PAYCHECKS_LEFTOVER_FACTOR = 0.6
